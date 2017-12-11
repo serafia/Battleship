@@ -1,0 +1,76 @@
+body {
+	background-color: #000;
+}
+#board {
+	position: relative;
+	width: 1024px;
+	height: 863px;
+	margin: auto;
+	background: url("images/board.jpg") no-repeat;
+}
+#messageArea {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-size: 17px;
+	color: rgb(83, 175, 19);
+}
+table {
+	position: absolute;
+	top: 98px;
+	left: 173px;
+	border-spacing: 0px;
+}
+td {
+	width: 94px;
+	height: 94px;
+}
+form {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+	border-radius: 5px;
+
+}
+form input {
+	background-color: rgb(152, 207, 113);
+	font-size: 1em;
+	border: none;
+
+}
+#fireButton {
+	border-radius: 2px;
+	cursor: pointer;
+	transition: .3s;
+}
+.hit {
+	background: url("images/ship.png") no-repeat center center;
+}
+.miss {
+	background: url("images/miss.png") no-repeat center center;
+}
+#newGame {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background-color: rgb(83, 175, 19);
+	border: none;
+	width: 120px;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 17px;
+	cursor: pointer;
+	transition: .3s;
+}
+#newGame:hover {
+	background-color: rgb(152, 207, 113);
+}
+#guessInput:focus {
+	outline-color: #2A5C07;
+}
+#fireButton:hover {
+	background-color: #2A5C07;
+	
+}
