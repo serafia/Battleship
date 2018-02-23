@@ -176,10 +176,14 @@ function newGame() {
 			ship.hits[j] = "";
 		}
 	}
-	var cellHit = $("td");
-	var cellMiss = $("td");
-	cellHit.removeClass("hit");
-	cellMiss.removeClass("miss");
+	var cellHit = document.getElementsByClassName("hit");
+	var cellMiss = document.getElementsByClassName("miss");
+	for(i=0; i < cellHit.length; i++) {
+		cellHit[i].removeAttribute("class");
+	}
+	for(i=0; i < cellMiss.length; i++) {
+		cellMiss[i].removeAttribute("class");
+	}
 	model.generateShipLocations();
 	console.log("nowa gra");
 }
