@@ -1,3 +1,3 @@
 # battleship
- https://serafia.github.io/battleship/
+https://serafia.github.io/Battleship/
  
